@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Contact Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Applegater-Normal&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Matura+MT+Script+Capitals&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #FF6B6B, #4CAF50, #AC92EB, #FFD166);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s infinite;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1, h2, p {
+      margin: 0;
+    }
+
+    h1 {
+      font-family: 'Matura MT Script Capitals', cursive;
+      font-size: 3em;
+      font-style: bold;
+      letter-spacing: 10px;
+      animation: fadeInUp 1s ease-out; /* Welcome animation */
+      color: black;
+      margin-bottom: 0;
+    }
+    .name{
+      color: #b73537;
+    }
+    h1 span {
+      color: #b73537; /* Color for the specified letters */
+    }
+
+    p span {
+      color: #b73537; /* Color for the specified letters */
+      font-size: 2em;
+      font-family: 'Matura MT Script Capitals', cursive;
+    }
+
+    .dealsin{
+      color: #b73537;
+      font-size: 1em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      letter-spacing: 10px;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%; /* Adjusted width for a larger logo */
+      max-width: 300px; /* Set a maximum width */
+      margin-bottom: 20px;
+      animation: scaleIn 1s ease-out; /* Logo animation */
+    }
+
+    .contact-info {
+      background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white for glass effect */
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+      text-align: left; /* Align text to the left */
+    }
+
+    p.welcome {
+      font-size: 1.5em;
+      margin-top: 20px;
+      animation: fadeInUp 1s ease-out; /* Welcome animation */
+    }
+
+    p.tagline {
+      font-size: 1.5em;
+      color: black;
+    }
+
+    .dealsin-content{
+      color: #333;
+
+    }
+
+    /* Footer Styles */
+    footer {
+      width: 100%;
+      height: 20px; /* Adjust the height as needed */
+      padding: 10px;
+      background: #333; /* Solid color for the footer */
+      color: white;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+    }
+
+    /* Gradient Animation for Background */
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      img {
+        max-width: 200px; /* Adjusted max-width for smaller screens */
+      }
+    }
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+    .color-black{
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <img src="logo.jpg" alt="Company Logo">
+    <h1 class="name">Bobby</h1>
+    <h2>Property Advisor</h2>
+    <p class="tagline">Sale <span>&</span> Purchase</p>
+    <p class="dealsin-content"><span class="dealsin">Deals in:</span> Kothi, Plot, Shop, Shed & Agriculture Land.</p>
+    
+    <!-- Contact Information Box -->
+    <div class="contact-info">
+      <p class="color-black" align="center" style="font-size: 1.5em;">Contact Information:</p>
+      <p class="color-black"><i class="fa fa-phone"></i> Phone: <a href="tel:+919855340488">+91 9855340488</a></p>
+      <p class="color-black"><i class="fa fa-envelope"></i> Email: <a href="mailto:vipankuma0906@gmail.com">vipankuma0906@gmail.com</a></p>
+      <p class="color-black"><i class="fa fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/919855340488" target="https://wa.me/919855340488">+91 9855340488</a></p>
+    </div>
+  </div>
+</body>
+</html>
